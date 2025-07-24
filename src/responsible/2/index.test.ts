@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from "bun:test"
-import { effect, responsibleData } from "./index"
+import { effect, responsibleData } from "."
 
-describe("响应式对象测试", () => {
+describe("基本响应式对象测试", () => {
     beforeEach(() => {
         // 简单的重置方式，避免触发复杂的响应式逻辑
         responsibleData.text = "hello world"

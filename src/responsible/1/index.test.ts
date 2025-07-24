@@ -1,7 +1,7 @@
 import * as module from ".";
 import { expect, jest, test } from "bun:test"
 
-test('should trigger effect when data is changed', () => {
+test('响应式模型测试', () => {
     // 使用 jest.spyOn 直接监控 INTERNAL_effect 函数
     const spy = jest.spyOn(module, 'effect');
     
